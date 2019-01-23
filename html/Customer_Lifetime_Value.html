@@ -11785,7 +11785,7 @@ div#notebook {
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#Client id</span>
-<span class="nb">id</span> <span class="o">=</span> <span class="s1">&#39;be1c4e52bb71e0c54b11a26b8e8d59f2&#39;</span>
+<span class="nb">id</span> <span class="o">=</span> <span class="s1">&#39;31ad1d1b63eb9962463f764d4e6e0c9d&#39;</span>
 </pre></div>
 
 </div>
@@ -11877,12 +11877,12 @@ div#notebook {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Customer average review score: 1.00
-Average item price: 65.41 R$
-Average freight price: 11.02 R$
+<pre>Customer average review score: 5.00
+Average item price: 149.99 R$
+Average freight price: 19.77 R$
 Average delay: 0.00 %
-Average order price: 784.98 R$
-Client&#39;s city average revenue by client: 107.42 R$
+Average order price: 149.99 R$
+Client&#39;s city average revenue by client: 108.70 R$
 Client&#39;s state average revenue by client: 109.58 R$
 </pre>
 </div>
@@ -11948,8 +11948,8 @@ Client&#39;s state average revenue by client: 109.58 R$
   <tbody>
     <tr>
       <th>0</th>
-      <td>cama_mesa_banho</td>
-      <td>12</td>
+      <td>moveis_escritorio</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
@@ -12009,12 +12009,391 @@ Client&#39;s state average revenue by client: 109.58 R$
   </thead>
   <tbody>
     <tr>
-      <th>3588</th>
-      <td>sao paulo</td>
-      <td>107.415274</td>
+      <th>3749</th>
+      <td>sorocaba</td>
+      <td>108.704986</td>
     </tr>
   </tbody>
 </table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">state</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[5]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>customer_state</th>
+      <th>price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>25</th>
+      <td>SP</td>
+      <td>109.579219</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">final</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[6]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>order_id</th>
+      <th>customer_id</th>
+      <th>order_status</th>
+      <th>order_purchase_timestamp</th>
+      <th>order_approved_at</th>
+      <th>order_delivered_carrier_date</th>
+      <th>order_delivered_customer_date</th>
+      <th>order_estimated_delivery_date</th>
+      <th>customer_unique_id</th>
+      <th>customer_zip_code_prefix</th>
+      <th>...</th>
+      <th>customer_state</th>
+      <th>review_id</th>
+      <th>review_score</th>
+      <th>review_comment_title</th>
+      <th>review_comment_message</th>
+      <th>review_creation_date</th>
+      <th>review_answer_timestamp</th>
+      <th>price</th>
+      <th>freight_value</th>
+      <th>product_category_name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>e481f51cbdc54678b7cc49136f2d6af7</td>
+      <td>9ef432eb6251297304e76186b10a928d</td>
+      <td>delivered</td>
+      <td>2017-10-02 10:56:33</td>
+      <td>2017-10-02 11:07:15</td>
+      <td>2017-10-04 19:55:00</td>
+      <td>2017-10-10 21:25:13</td>
+      <td>2017-10-18 00:00:00</td>
+      <td>7c396fd4830fd04220f754e42b4e5bff</td>
+      <td>3149</td>
+      <td>...</td>
+      <td>SP</td>
+      <td>a54f0611adc9ed256b57ede6b6eb5114</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>Não testei o produto ainda, mas ele veio corre...</td>
+      <td>2017-10-11 00:00:00</td>
+      <td>2017-10-12 03:43:48</td>
+      <td>29.99</td>
+      <td>8.72</td>
+      <td>utilidades_domesticas</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>53cdb2fc8bc7dce0b6741e2150273451</td>
+      <td>b0830fb4747a6c6d20dea0b8c802d7ef</td>
+      <td>delivered</td>
+      <td>2018-07-24 20:41:37</td>
+      <td>2018-07-26 03:24:27</td>
+      <td>2018-07-26 14:31:00</td>
+      <td>2018-08-07 15:27:45</td>
+      <td>2018-08-13 00:00:00</td>
+      <td>af07308b275d755c9edb36a90c618231</td>
+      <td>47813</td>
+      <td>...</td>
+      <td>BA</td>
+      <td>8d5266042046a06655c8db133d120ba5</td>
+      <td>4</td>
+      <td>Muito boa a loja</td>
+      <td>Muito bom o produto.</td>
+      <td>2018-08-08 00:00:00</td>
+      <td>2018-08-08 18:37:50</td>
+      <td>118.70</td>
+      <td>22.76</td>
+      <td>perfumaria</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>47770eb9100c2d0c44946d9cf07ec65d</td>
+      <td>41ce2a54c0b03bf3443c3d931a367089</td>
+      <td>delivered</td>
+      <td>2018-08-08 08:38:49</td>
+      <td>2018-08-08 08:55:23</td>
+      <td>2018-08-08 13:50:00</td>
+      <td>2018-08-17 18:06:29</td>
+      <td>2018-09-04 00:00:00</td>
+      <td>3a653a41f6f9fc3d2a113cf8398680e8</td>
+      <td>75265</td>
+      <td>...</td>
+      <td>GO</td>
+      <td>e73b67b67587f7644d5bd1a52deb1b01</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2018-08-18 00:00:00</td>
+      <td>2018-08-22 19:07:58</td>
+      <td>159.90</td>
+      <td>19.22</td>
+      <td>automotivo</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>949d5b44dbf5de918fe9c16f97b45f8a</td>
+      <td>f88197465ea7920adcdbec7375364d82</td>
+      <td>delivered</td>
+      <td>2017-11-18 19:28:06</td>
+      <td>2017-11-18 19:45:59</td>
+      <td>2017-11-22 13:39:59</td>
+      <td>2017-12-02 00:28:42</td>
+      <td>2017-12-15 00:00:00</td>
+      <td>7c142cf63193a1473d2e66489a9ae977</td>
+      <td>59296</td>
+      <td>...</td>
+      <td>RN</td>
+      <td>359d03e676b3c069f62cadba8dd3f6e8</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>O produto foi exatamente o que eu esperava e e...</td>
+      <td>2017-12-03 00:00:00</td>
+      <td>2017-12-05 19:21:58</td>
+      <td>45.00</td>
+      <td>27.20</td>
+      <td>pet_shop</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>ad21c59c0840e6cb83a9ceb5573f8159</td>
+      <td>8ab97904e6daea8866dbdbc4fb7aad2c</td>
+      <td>delivered</td>
+      <td>2018-02-13 21:18:39</td>
+      <td>2018-02-13 22:20:29</td>
+      <td>2018-02-14 19:46:34</td>
+      <td>2018-02-16 18:17:02</td>
+      <td>2018-02-26 00:00:00</td>
+      <td>72632f0f9dd73dfee390c9b22eb56dd6</td>
+      <td>9195</td>
+      <td>...</td>
+      <td>SP</td>
+      <td>e50934924e227544ba8246aeb3770dd4</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2018-02-17 00:00:00</td>
+      <td>2018-02-18 13:02:51</td>
+      <td>19.90</td>
+      <td>8.72</td>
+      <td>papelaria</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>a4591c265e18cb1dcee52889e2d8acc3</td>
+      <td>503740e9ca751ccdda7ba28e9ab8f608</td>
+      <td>delivered</td>
+      <td>2017-07-09 21:57:05</td>
+      <td>2017-07-09 22:10:13</td>
+      <td>2017-07-11 14:58:04</td>
+      <td>2017-07-26 10:57:55</td>
+      <td>2017-08-01 00:00:00</td>
+      <td>80bb27c7c16e8f973207a5086ab329e2</td>
+      <td>86320</td>
+      <td>...</td>
+      <td>PR</td>
+      <td>89b738e70a1ce346db29a20fb2910161</td>
+      <td>4</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2017-07-27 00:00:00</td>
+      <td>2017-07-27 22:48:30</td>
+      <td>147.90</td>
+      <td>27.36</td>
+      <td>automotivo</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>136cce7faa42fdb2cefd53fdc79a6098</td>
+      <td>ed0271e0b7da060a393796590e7b737a</td>
+      <td>invoiced</td>
+      <td>2017-04-11 12:22:08</td>
+      <td>2017-04-13 13:25:17</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2017-05-09 00:00:00</td>
+      <td>36edbb3fb164b1f16485364b6fb04c73</td>
+      <td>98900</td>
+      <td>...</td>
+      <td>RS</td>
+      <td>e07549ef5311abcc92ba1784b093fb56</td>
+      <td>2</td>
+      <td>NaN</td>
+      <td>fiquei triste por n ter me atendido.</td>
+      <td>2017-05-13 00:00:00</td>
+      <td>2017-05-13 20:25:42</td>
+      <td>49.90</td>
+      <td>16.05</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>6514b8ad8028c9f2cc2374ded245783f</td>
+      <td>9bdf08b4b3b52b5526ff42d37d47f222</td>
+      <td>delivered</td>
+      <td>2017-05-16 13:10:30</td>
+      <td>2017-05-16 13:22:11</td>
+      <td>2017-05-22 10:07:46</td>
+      <td>2017-05-26 12:55:51</td>
+      <td>2017-06-07 00:00:00</td>
+      <td>932afa1e708222e5821dac9cd5db4cae</td>
+      <td>26525</td>
+      <td>...</td>
+      <td>RJ</td>
+      <td>07d67dd06ed5f88bef11ef6b464e79ae</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2017-05-27 00:00:00</td>
+      <td>2017-05-28 02:59:57</td>
+      <td>59.99</td>
+      <td>15.17</td>
+      <td>automotivo</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>76c6e866289321a7c93b82b54852dc33</td>
+      <td>f54a9f0e6b351c431402b8461ea51999</td>
+      <td>delivered</td>
+      <td>2017-01-23 18:29:09</td>
+      <td>2017-01-25 02:50:47</td>
+      <td>2017-01-26 14:16:31</td>
+      <td>2017-02-02 14:08:10</td>
+      <td>2017-03-06 00:00:00</td>
+      <td>39382392765b6dc74812866ee5ee92a7</td>
+      <td>99655</td>
+      <td>...</td>
+      <td>RS</td>
+      <td>fc4af8aea8ec3f1a3cd181d3d0cadbd5</td>
+      <td>1</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2017-02-03 00:00:00</td>
+      <td>2017-02-05 01:58:35</td>
+      <td>19.90</td>
+      <td>16.05</td>
+      <td>moveis_decoracao</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>e69bfb5eb88e0ed6a785585b27e16dbf</td>
+      <td>31ad1d1b63eb9962463f764d4e6e0c9d</td>
+      <td>delivered</td>
+      <td>2017-07-29 11:55:02</td>
+      <td>2017-07-29 12:05:32</td>
+      <td>2017-08-10 19:45:24</td>
+      <td>2017-08-16 17:14:30</td>
+      <td>2017-08-23 00:00:00</td>
+      <td>299905e3934e9e181bfb2e164dd4b4f8</td>
+      <td>18075</td>
+      <td>...</td>
+      <td>SP</td>
+      <td>abc5655186d40772bd6e410420e6a3ed</td>
+      <td>5</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2017-08-17 00:00:00</td>
+      <td>2017-08-18 01:47:32</td>
+      <td>149.99</td>
+      <td>19.77</td>
+      <td>moveis_escritorio</td>
+    </tr>
+  </tbody>
+</table>
+<p>10 rows × 21 columns</p>
 </div>
 </div>
 

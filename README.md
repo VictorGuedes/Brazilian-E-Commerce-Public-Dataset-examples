@@ -43,3 +43,9 @@ Customer Lifetime Value:
 1. How much a customer will bring in future revenue?
 
 Feel free to use the kernels however you want. enjoy
+
+### References
+
+Special thanks to:
+
+[Andre Sionek](https://www.kaggle.com/andresionek/geospatial-analysis-of-brazilian-e-commerce)
